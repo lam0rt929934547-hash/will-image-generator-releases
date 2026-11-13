@@ -2,24 +2,24 @@
   "schemaVersion": 1,
   "repository": "lam0rt929934547-hash/will-image-generator-releases",
   "release": {
-    "tag_name": "v0.2.1",
+    "tag_name": "v0.2.2",
     "draft": false,
     "prerelease": false,
-    "body": "Will Image Generator 0.2.1 改善工作台的日常操作，并加入完整离线图文教程。\r\n\r\n- **顶部导航**：圆角浮动选中背景、平滑移动与柔和悬停反馈，适配浅色森林绿和暖金深色主题。\r\n- **本机字体**：进入水印设计台自动读取已安装字体，完整列表支持搜索、字体样例和键盘选择，修复列表被当前字体名称过滤的问题。仍可手动刷新或导入字体文件。\r\n- **PS 常用快捷键**：Ctrl+J 复制、Ctrl+D 取消选择、Ctrl+G 编组、Ctrl+T 自由变换、Ctrl+S 保存等。变换支持 Enter 确认、Esc 取消，输入框内保留正常文字编辑操作。设计台底部可查看快捷键表。\r\n- **持续实时预览**：导出工作台与水印设计台在连续拖动参数时持续更新画板，停止后补齐预览清晰度。曲线数值输入即时生效，导出仍按所选分辨率使用同一套渲染逻辑。\r\n- **22 章新手教程**：入口位于 Key 状态左边，也可按 F1 打开。覆盖所有页面和主要按钮，包含实际界面截图、红框、箭头、分步操作、参数说明、搜索与大图查看，无需联网。\r\n\r\n验证：39 项本地测试、字体与快捷键桌面交互、连续基础调色与曲线预览、12 画板操作、4K 成品渲染一致性及教程全部图片加载。安装包另经过真实安装、覆盖升级、完整性检查和卸载保留数据验证。测试未调用付费生图或优化接口。\r\n\r\nWindows 10 / 11 x64。下载 `WillImageGenerator-Setup-x64.exe` 后退出旧版并覆盖安装，或在软件内检测更新。保留现有 Key、历史、预设和图片。\r\n\r\nPSD 兼容范围沿用 0.2.0：复杂效果使用合成图或基础效果回退，不回写 PSD。预览响应速度仍与电脑性能、图层复杂度和同时显示的画板数量有关。\r\n\r\n同版本修复（2026-11-13）：恢复创作台成品图片框选，扩大空白起拖区域，并提供「框选」开关，可从图片上直接框选。保留自由拖动排序、Ctrl/Shift 追加选择、Esc 取消及边缘自动滚动。已安装 0.2.1 的用户请重新下载附件覆盖安装，版本号相同不会触发更新提示。\r\n",
+    "body": "Will Image Generator 0.2.2 改善更新查询，减少共享网络或代理出口导致的 GitHub 限流提示。\n\n- 优先从指定下载仓库读取静态版本信息，不再每次打开窗口都消耗匿名 GitHub REST API 查询额度；静态源暂不可用时再尝试 API。\n- 重复打开更新窗口复用 5 分钟内的检查结果。主动重新检测保留最短间隔；服务器限流时遵守恢复时间，并显示等待倒计时。\n- 区分普通 403 拒绝访问与真实限流，提示更新查询失败不影响生图、调色和本地导出。\n- 仍严格限制下载来源，保留文件大小、SHA-256 和安装前复核。无需成员登录 GitHub，也不内置个人 GitHub 凭据。\n- 包含创作台框选修复：空白处拖动框选；开启「框选」后可从图片上起拖，关闭恢复拖动排序。保留 Ctrl/Shift 追加、Esc 取消、边缘自动滚动。\n\n从 0.2.1 升级：打开检测更新即可识别 0.2.2。旧版如果正在被 GitHub API 限流，请用下载页面手动安装一次新版，之后使用新的检查方式。覆盖安装保留 Key、原图、历史和水印预设。\n\n已验证静态源/API 回退、缓存、限流倒计时、下载校验和安装保护。Windows 10 / 11 x64。本次测试未调用付费生图或优化接口。\n",
     "assets": [
       {
         "name": "WillImageGenerator-Setup-x64.exe",
         "state": "uploaded",
-        "size": 125079552,
-        "digest": "sha256:15a838d6915361ce93945b798676c9e9da71fee7211c389f7df4efe7f166c6b0",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.1/WillImageGenerator-Setup-x64.exe"
+        "size": 125070848,
+        "digest": "sha256:8c359c4d0a59098520615ea367f2a07d3b1cfed4580d22feb0fd8c0f9cda5fda",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.2/WillImageGenerator-Setup-x64.exe"
       },
       {
         "name": "WillImageGenerator-Setup-x64.exe.sha256.txt",
         "state": "uploaded",
         "size": 99,
-        "digest": "sha256:b02fcb87f0ac426ff1afb9291812a6c2a293dde2bc1294837e327e1c68612d6d",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.1/WillImageGenerator-Setup-x64.exe.sha256.txt"
+        "digest": "sha256:d559bd6621ef6ac876cef148469bcde007e88d0aba8257c553e85806102390e4",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.2/WillImageGenerator-Setup-x64.exe.sha256.txt"
       }
     ]
   }
