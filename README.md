@@ -25,6 +25,16 @@ Windows 上的 YouTube 缩略图创作工具：AI 生图、参考图编辑、本
 
 生图、DeepSeek 优化请求与更新下载跟随 Windows 系统代理。API 用量、模型权限与额度由 OpenAI 项目控制；本地导入、水印和导出不消耗生图额度。
 
+## 0.2.3 DeepSeek 负面词与画面约束
+
+- **负面词板块**：优化设置增加「不出现儿童」「避免色情裸露」「避免暴力血腥」，默认勾选，可独立开关。支持自定义排除、预览、恢复推荐设置，保存到本机。
+- **正文与约束一起处理**：DeepSeek 先消除正文冲突并逐项自查，再由软件附加自然语言排除要求。关闭 DeepSeek 优化时不附加；一套多张仍只优化一次。
+- **记录可查**：原始提示词、改写、各项检查理由及最终提交稿保留；修改设置后重新优化。
+- **冲突处理**：明确儿童角色与排除选项冲突时暂停，不擅自改年龄。自查缺失、未解决冲突、声称改写却没有变化、长度超限都不继续生图。普通儿童画面本身并不等于违规。
+- 参考 [Diffusers 负面提示说明](https://github.com/huggingface/diffusers/blob/main/docs/source/en/using-diffusers/conditional_image_generation.md)与 [Safe Latent Diffusion](https://github.com/ml-research/safe-latent-diffusion)的设计思路，使用原创中文约束；未增加模型依赖或假设 GPT 接口有扩散模型的同名参数。
+
+仅处理文字，不检查参考图，不保证审核通过。DeepSeek 仍独立计费，不自动反复重试。自动化与桌面测试使用模拟服务，未调用付费 AI 接口或测量实际出图率。
+
 ## 0.2.2 更新查询与限流修复
 
 - 优先读取下载仓库内的静态版本文件，静态源暂不可用时再查询 GitHub API，减少共享出口 IP 匿名额度耗尽的影响。
