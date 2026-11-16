@@ -2,24 +2,24 @@
   "schemaVersion": 1,
   "repository": "lam0rt929934547-hash/will-image-generator-releases",
   "release": {
-    "tag_name": "v0.2.2",
+    "tag_name": "v0.2.3",
     "draft": false,
     "prerelease": false,
-    "body": "Will Image Generator 0.2.2 改善更新查询，减少共享网络或代理出口导致的 GitHub 限流提示。\n\n- 优先从指定下载仓库读取静态版本信息，不再每次打开窗口都消耗匿名 GitHub REST API 查询额度；静态源暂不可用时再尝试 API。\n- 重复打开更新窗口复用 5 分钟内的检查结果。主动重新检测保留最短间隔；服务器限流时遵守恢复时间，并显示等待倒计时。\n- 区分普通 403 拒绝访问与真实限流，提示更新查询失败不影响生图、调色和本地导出。\n- 仍严格限制下载来源，保留文件大小、SHA-256 和安装前复核。无需成员登录 GitHub，也不内置个人 GitHub 凭据。\n- 包含创作台框选修复：空白处拖动框选；开启「框选」后可从图片上起拖，关闭恢复拖动排序。保留 Ctrl/Shift 追加、Esc 取消、边缘自动滚动。\n\n从 0.2.1 升级：打开检测更新即可识别 0.2.2。旧版如果正在被 GitHub API 限流，请用下载页面手动安装一次新版，之后使用新的检查方式。覆盖安装保留 Key、原图、历史和水印预设。\n\n已验证静态源/API 回退、缓存、限流倒计时、下载校验和安装保护。Windows 10 / 11 x64。本次测试未调用付费生图或优化接口。\n",
+    "body": "Will Image Generator 0.2.3 增强 DeepSeek 提示词优化与负面词设置。\n\n- 优化设置新增「负面词 · 画面排除」：不出现儿童、避免色情裸露、避免暴力血腥默认勾选，可分别调整；支持自定义排除、预览和恢复推荐设置。\n- 开启 DeepSeek 优化后，先改写冲突正文、逐项自查，再由软件将排除要求附加到提交稿。设置保存在本机，原文、改写及检查记录均保留。一套多张任务仍只改写一次。\n- 明确儿童角色与成人画面选项冲突时暂停，不擅自改年龄。儿童画面本身不等于违规。保留原标题、明确年龄和尺寸。\n- 自查缺失、未解决冲突、声称改写但没有文字变化、总长度超限均不继续生图；修改设置会使旧优化凭据失效。不自动反复重试。\n- 关闭 DeepSeek 优化时不附加这些约束。DeepSeek 仍使用独立 Key、独立计费，只发送文字，不检查参考图；负面词与模型自查不保证审核通过。\n\n参考 GitHub 上的 Hugging Face Diffusers 与 Safe Latent Diffusion 设计思路，使用原创中文自然语言约束，未引入模型依赖或第三方黑名单。\n\nWindows 10 / 11 x64。覆盖安装保留 Key、历史、图片与水印预设。功能与界面验证使用模拟服务，未调用付费生图或 DeepSeek API，未测量实际出图率。\n",
     "assets": [
       {
         "name": "WillImageGenerator-Setup-x64.exe",
         "state": "uploaded",
-        "size": 125070848,
-        "digest": "sha256:8c359c4d0a59098520615ea367f2a07d3b1cfed4580d22feb0fd8c0f9cda5fda",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.2/WillImageGenerator-Setup-x64.exe"
+        "size": 125091328,
+        "digest": "sha256:9266df9464558403494667d200f218c04e0f28eec6c052d74fbb4557996f27f6",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.3/WillImageGenerator-Setup-x64.exe"
       },
       {
         "name": "WillImageGenerator-Setup-x64.exe.sha256.txt",
         "state": "uploaded",
         "size": 99,
-        "digest": "sha256:d559bd6621ef6ac876cef148469bcde007e88d0aba8257c553e85806102390e4",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.2/WillImageGenerator-Setup-x64.exe.sha256.txt"
+        "digest": "sha256:e6ee61cd64ef84c6b8a56bd673b0ca2cc05281b3d4019d173cc07e8c239b882b",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.3/WillImageGenerator-Setup-x64.exe.sha256.txt"
       }
     ]
   }
