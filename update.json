@@ -2,24 +2,24 @@
   "schemaVersion": 1,
   "repository": "lam0rt929934547-hash/will-image-generator-releases",
   "release": {
-    "tag_name": "v0.2.4",
+    "tag_name": "v0.2.5",
     "draft": false,
     "prerelease": false,
-    "body": "Will Image Generator 0.2.4 为水印设计加入图片编辑工具。\n\n- 选中一个未锁定的图片图层，点击「抠图 / 液化 / 遮罩」，进入独立的大画布编辑面板。\n- 内置轻量离线 AI 主体抠图，无需额外 Key，不上传图片、不消耗 API。另有魔棒去背景，可调容差和相连区域。\n- 遮罩支持擦除、恢复、羽化、反转、清除和启用开关；保留图像原有透明度。支持遮罩视图、原始素材对照、透明 / 浅色 / 深色 / 当前封面底图。\n- 液化提供推拉、膨胀和收缩，遮罩与图像同步变形。画笔半径、强度、硬度支持滑块及精确数值，带范围光标。\n- 支持撤销重做、放大后滚动查看，以及 E / B / [ / ] / Ctrl+Z 等快捷键。应用后保留原始素材和独立遮罩，取消不改动外部图层。\n- 旧 PNG 水印的「图片工具」入口会创建新设计，原预设保留；PNG 不能还原文字图层。工程导出带上图片、遮罩和原始素材，可在另一台电脑继续编辑。\n- 更新离线图文教程，增加图片编辑章节。\n\n支持最多 1600 万像素的图片素材，不自动降低素材分辨率。AI 使用 U2-Net-P 轻量模型，复杂背景、发丝、透明物体可能需要手动修整；不承诺等同 Photoshop 的选主体、蒙版体系或人脸感知液化。撤销最多 20 步，大图按内存预算保留较少步。\n\n已验证实际离线模型推理、像素与遮罩编辑、撤销、取消、重启恢复和预览 / 保存一致性。Windows 10 / 11 x64，覆盖安装保留 Key、历史、图片与水印预设。测试未调用付费接口。\n",
+    "body": "Will Image Generator 0.2.5 将封面图片编辑接入导出工作台，并完善水印图层操作。\n\n- 导出工作台选择一张画板，点击「编辑封面」，直接使用离线抠图、魔棒、液化、遮罩和圆角；右侧调色与水印一起实时预览。应用只影响当前导出版本，历史原图保留，重启后可继续编辑。PNG 保留透明区域，JPG 使用白底。\n- 图片编辑新增矩形框选、自由套索、多边形套索。支持添加、减去、交集、反选、取消选区，以及隐藏、恢复、只保留选区。画笔、魔棒、AI 抠图和液化遵守选区范围，选区提示不写入导出文件。\n- 水印图层支持直接拖动排序，包括选中多层和整个组；插入线提示位置。眼睛按钮和隐藏状态更明确，可按不同可见组合另存为多个预设。\n- 修复复制编组后副本与原组同时被选中的问题。选中整组可通过统一手柄等比缩放与旋转，也可填写整体尺寸。\n- 新增「合并为图片」与 Ctrl+E：合并所选可见图层在画布内的效果，隐藏层保留；可撤销恢复。文字合并后变为像素。\n- 图片图层支持 0–50% 圆角，实时预览并应用到水印预设和导出结果。\n- 画布和图层列表增加右键菜单：复制、编组、解组、合并、隐藏、锁定、排序、图片编辑和删除。画布底部「快捷键速查」直接打开独立面板。\n- 原抠图教程归入「设计水印」，新增封面编辑图文说明，共 24 章，使用实际界面截图、红框与箭头。\n\n已验证编组独立复制、整组缩放、实际拖动排序、隐藏组合预设、框选与套索、实时预览、透明 PNG、导出一致性、取消、撤销重做和重启恢复。另有 52 项单元检查，正式打包程序验证实际离线模型推理；未调用付费接口。\n\n图片编辑支持最多 1600 万像素。复杂背景、发丝、透明物体的自动抠图可能需要手动修边。组内文字可保留分层并整体缩放；仅在选择合并时转成图片。Windows 10 / 11 x64，覆盖安装保留 Key、历史图片和水印预设。\n",
     "assets": [
       {
         "name": "WillImageGenerator-Setup-x64.exe",
         "state": "uploaded",
-        "size": 156058112,
-        "digest": "sha256:5587bca834040697aaec8b09790d41eeff1a0e8b338c6b0f7b589876da76903e",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.4/WillImageGenerator-Setup-x64.exe"
+        "size": 158701056,
+        "digest": "sha256:e10e92b4f093c86d7f6377002017314eed344defeb3a1444edd083d496efbe40",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.5/WillImageGenerator-Setup-x64.exe"
       },
       {
         "name": "WillImageGenerator-Setup-x64.exe.sha256.txt",
         "state": "uploaded",
         "size": 99,
-        "digest": "sha256:25733f8ac675c2e10efa0b0cbc2661039362da35a5063b607b189cc3ee4e5879",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.4/WillImageGenerator-Setup-x64.exe.sha256.txt"
+        "digest": "sha256:250dbb32885291b293e743949e84b0fb56f4bb22affc664a4897d99ddec2f511",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.5/WillImageGenerator-Setup-x64.exe.sha256.txt"
       }
     ]
   }
