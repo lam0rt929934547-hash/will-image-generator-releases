@@ -2,24 +2,24 @@
   "schemaVersion": 1,
   "repository": "lam0rt929934547-hash/will-image-generator-releases",
   "release": {
-    "tag_name": "v0.2.7",
+    "tag_name": "v0.3.0",
     "draft": false,
     "prerelease": false,
-    "body": "导出工作台：封面镜像、旋转、缩放与裁剪\r\n\r\n- 新增「封面构图」入口及右侧「封面」面板：水平 / 垂直镜像、左右转 90°、精确角度、25%–400% 缩放、水平与垂直偏移、居中。\r\n- 提供完整显示与填满画板，调整实时预览；只改变封面底图，水印保持独立的位置、尺寸和方向。\r\n- 可拖动的裁剪框：框内移动、四角缩放、自由或固定比例、精确百分比输入；右侧实时查看成品效果。应用前可取消，应用后支持撤销与恢复。\r\n- 镜像、旋转、缩放和位置可批量应用，裁剪针对单张图片。保留原图、调色、遮罩和液化结果，重启后设置仍在。\r\n- 适配旋转、镜像后的局部画笔坐标，预览与导出使用同一变换流程。水印在最后独立叠加。\r\n- 新手教程新增两章图文说明，共 27 章。\r\n\r\n输出仍保持所选的 16:9 尺寸；PNG 保留空白透明区域，JPG 使用白色背景。更新保留已有 Key、历史记录、水印和图片。\r\n",
+    "body": "## 提示词生成\n\n- 首次使用时，先给频道命名并填写自己的标题生成提示词，再保存封面生成提示词。两段提示词均从空白开始，输入进度会自动保存在本机。\n- 写好预设后，填写剧名和剧情简介，点击生成才会调用 AI。每个频道可以设置自己的候选标题数量、文字模型和封面要求。\n- 标题和封面可分别选用 DeepSeek 或 OpenAI。选好标题后，可以生成对应的封面提示词、追加备选，或把满意的方案送到创作台。\n- 已试用 0.2.9 的用户，正式版首次打开此面板时会读取已有自定义频道与剧集草稿。仍在使用旧示例指令的频道可补填自己的提示词，原有剧集记录会保留。\n- 新手教程增加频道设置的两步图解。文字用量页面可以查看费用估算并设置本机文字月预算。\n\n适用于 64 位 Windows 10 和 Windows 11。现有正式版可在右上角点击「检测更新」，也可以下载本页的一键安装包。\n",
     "assets": [
       {
         "name": "WillImageGenerator-Setup-x64.exe",
         "state": "uploaded",
-        "size": 161182208,
-        "digest": "sha256:0923cbe8c5c4245393803779e82e6e941f83736ad6578fffd739b48834eb963e",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.7/WillImageGenerator-Setup-x64.exe"
+        "size": 161390080,
+        "digest": "sha256:ee05b9a5c2b2e3b43af2cf98da94814a992fddc6c2b8e9dee68217bc7fb49da9",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.3.0/WillImageGenerator-Setup-x64.exe"
       },
       {
         "name": "WillImageGenerator-Setup-x64.exe.sha256.txt",
         "state": "uploaded",
         "size": 99,
-        "digest": "sha256:ee3d1403876092059f42a1269e61faaf3f6beab2552f3cd90450ab733bff6777",
-        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.2.7/WillImageGenerator-Setup-x64.exe.sha256.txt"
+        "digest": "sha256:e58834ba300f6f5d93a9dfc3441e28bf84dcf445bb39e4bdcc2a0c09e81c30a2",
+        "browser_download_url": "https://github.com/lam0rt929934547-hash/will-image-generator-releases/releases/download/v0.3.0/WillImageGenerator-Setup-x64.exe.sha256.txt"
       }
     ]
   }
